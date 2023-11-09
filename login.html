@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="img1.png" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="img 2.jpg" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="img 3.png" style="width:100%">
+          
+        </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+        
+    
+  
+    
+    
+    <form id="auth-credentials">
+        <table>
+            <tr>
+                <td>
+                    Enter username
+                </td>
+                <td>
+                    <input id="user"type="text" placeholder="Enter username">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter password
+                </td>
+                <td>
+                    <input id="pass"type="text" placeholder="Enter password">
+                    
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    <button id="sub" type="submit" onclick="validateform()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="code.js"></script>
+</body>

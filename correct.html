@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0"/>
+    <title>AUTH APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <h1> YOU HAVE LOGGED IN SUCCESSFULLY </h1>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="pin" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="start" onclick="myFunction()"type="button">START</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var pincode = Math.floor(100000 + Math.random() * 900000);
+            document.getElementById("pin").value = pincode;
+            setTimeout(myFunction,6000);
+        }
+    </script>
+
+</body>

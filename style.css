@@ -1,0 +1,104 @@
+body {
+    background-color: #efbfde;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(26, 222, 244);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style:italic;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  li a:hover {
+    background-color: rgb(8, 8, 8);
+  }
+
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 50px auto auto auto;
+  border-style:groove;
+  border-width: 10px;
+  border-color: black;
+}
+
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+form {
+    max-width:500px;
+    max-height: 500px;
+  position: relative;
+  margin: 100px auto auto auto;
+  border-style:groove;
+  border-width: 5px;
+  border-color: black;
+  background-color: rgb(177, 244, 244);
+}
+table {
+    margin:auto auto auto 60px;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+#sub {
+    margin:auto auto auto 130px;
+
+}
+#pin {
+    margin-left:100px;
+}
+#start {
+    margin-left:150px;
+}
